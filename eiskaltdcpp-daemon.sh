@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # backup existing
-tar czf /opt/eiskaltdcpp-daemon.old /opt/eiskaltdcpp-daemon
+sudo mv /opt/eiskaltdcpp-daemon /opt/eiskaltdcpp-daemon.old
 
 # download current master
 curl -L https://github.com/eiskaltdcpp/eiskaltdcpp/archive/master.tar.gz | tar xz -C /tmp
