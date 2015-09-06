@@ -15,6 +15,7 @@ cmake -DCMAKE_BUILD_TYPE=Release \
       -DJSONRPC_DAEMON=ON \
       -DLOCAL_JSONCPP=ON \
       -DUSE_QT=OFF \
+      -DUSE_QT5=OFF \
       -DFREE_SPACE_BAR_C=OFF \
       -DLINK=STATIC \
       -Dlinguas="" \
