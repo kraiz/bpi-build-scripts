@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# install build deps
+sudo apt-get install -y build-essential cmake pkg-config gettext libbz2-dev libboost-dev libboost-system-dev
+
 # backup existing
 sudo mv /opt/eiskaltdcpp-daemon /opt/eiskaltdcpp-daemon.old
 
@@ -16,6 +19,7 @@ cmake -DCMAKE_BUILD_TYPE=Release \
       -DLOCAL_JSONCPP=ON \
       -DUSE_QT=OFF \
       -DUSE_QT5=OFF \
+      -DUSE_IDNA=OFF \
       -DFREE_SPACE_BAR_C=OFF \
       -DLINK=STATIC \
       -Dlinguas="" \
